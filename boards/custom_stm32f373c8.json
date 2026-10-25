@@ -1,0 +1,32 @@
+{
+  "build": {
+    "arduino": {
+      "board": "GENERIC_F373C8TX",
+      "variant_h": "variant_generic.h"
+    },
+    "core": "stm32",
+    "cpu": "cortex-m4",
+    "extra_flags": "-DSTM32F3 -DSTM32F373xC",
+    "f_cpu": "8000000L",
+    "mcu": "stm32f373c8t6",
+    "product_line": "STM32F373xC",
+    "variant": "STM32F3xx/F373C(8-B-C)T"
+  },
+  "connectivity": ["can"],
+  "debug": {
+    "default_tools": ["stlink"],
+    "jlink_device": "STM32F373C8",
+    "openocd_target": "stm32f3x",
+    "svd_path": "STM32F37x.svd"
+  },
+  "frameworks": ["arduino"],
+  "name": "Solar Car Charge Controller STM32F373C8T6 (64 KB Flash, 16 KB RAM)",
+  "upload": {
+    "maximum_ram_size": 16384,
+    "maximum_size": 65536,
+    "protocol": "stlink",
+    "protocols": ["stlink", "cmsis-dap", "jlink"]
+  },
+  "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f373c8.html",
+  "vendor": "Badger Solar Racing"
+}
